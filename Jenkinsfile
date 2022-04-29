@@ -1,11 +1,9 @@
 pipeline {
      environment {
-	   ID_DOCKER = "rhardala"
+       ID_DOCKER = "rhardala"
        IMAGE_NAME = "static-website-ib"
        IMAGE_TAG = "v1"
-       #STAGING = "rhardala-staging"
-       #PRODUCTION = "rhardala-production"
-	   DOCKER_PASSWORD = credentiels('dockerhubpassword')
+       DOCKER_PASSWORD = credentiels('dockerhubpassword')
      }
      agent none
      stages {
